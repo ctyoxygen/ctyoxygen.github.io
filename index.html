@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live.ONE – AI Chatbot tư vấn & bán hàng tự động</title>
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #6c757d;
+      --light-bg: #f8f9fa;
+      --dark-text: #212529;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: var(--dark-text);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header, footer {
+      background: var(--light-bg);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 40px;
+    }
+
+    .cta-button {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    .benefit-item {
+      background: #eef5ff;
+      border-left: 5px solid var(--primary-color);
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .pricing-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .pricing-card {
+      flex: 1 1 calc(33.333% - 20px);
+      background-color: #ffffff;
+      border: 2px solid #dee2e6;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .pricing-card.highlight {
+      border-color: var(--primary-color);
+      background-color: #e9f5ff;
+    }
+
+    .pricing-card h3 {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 20px 0;
+    }
+
+    .pricing-card ul li {
+      margin-bottom: 8px;
+    }
+
+    .pricing-card .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-card {
+        flex: 1 1 100%;
+      }
+    }
+
+    .faq-item {
+      background: #f8f9fa;
+      padding: 15px 20px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .footer-links {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tư vấn & bán hàng tự động với AI Chatbot</h1>
+    <p>Live.ONE giúp bạn trả lời khách hàng 24/7 và tăng doanh số ngay cả khi bạn đang ngủ.</p>
+    <a href="#pricing" class="cta-button">Dùng thử miễn phí</a>
+  </header>
+
+  <div class="container">
+    <section class="intro">
+      <h2>Live.ONE là gì?</h2>
+      <p>Live.ONE là bộ công cụ AI giúp bạn tạo chatbot thông minh trên website. Chatbot có thể tư vấn sản phẩm, chăm sóc khách hàng và chốt đơn tự động – không cần nhân sự trực 24/7.</p>
+    </section>
+
+    <section class="benefits">
+      <h2>Lợi ích nổi bật</h2>
+      <div class="benefit-item">🤖 <strong>Phục vụ 24/7:</strong> Không bỏ lỡ khách hàng nào, kể cả lúc nửa đêm.</div>
+      <div class="benefit-item">💬 <strong>Tư vấn như người thật:</strong> Trả lời tự nhiên, hiểu ngữ cảnh và câu hỏi.</div>
+      <div class="benefit-item">📈 <strong>Tăng tỷ lệ chốt đơn:</strong> Hỏi – đáp nhanh, chuyển đổi cao hơn.</div>
+      <div class="benefit-item">⚙️ <strong>Dễ tích hợp:</strong> Gắn vào website chỉ vài bước đơn giản.</div>
+      <div class="benefit-item">💡 <strong>Thông minh hơn mỗi ngày:</strong> Học từ tương tác thực tế để tối ưu phản hồi.</div>
+    </section>
+
+    <section class="ecosystem">
+      <h2>Hệ sinh thái X.ONE – Giải pháp toàn diện cho kinh doanh online</h2>
+      <p>Các sản phẩm được thiết kế để giúp bạn tiếp thị, bán hàng và vận hành hiệu quả với nguồn lực nhỏ.</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Post.ONE</h3>
+          <ul>
+            <li>Đăng bài tự động lên mạng xã hội</li>
+            <li>Kết nối Google Sheets & AI</li>
+            <li>Dành cho cá nhân & doanh nghiệp nhỏ</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>Marketing.ONE</h3>
+          <ul>
+            <li>Bộ công cụ cho 1 người làm marketing</li>
+            <li>AI tạo nội dung, landing page, email</li>
+            <li>Dành cho chủ doanh nghiệp nhỏ</li>
+          </ul>
+        </div>
+        <div class="pricing-card highlight">
+          <h3>Live.ONE</h3>
+          <ul>
+            <li>Chatbot tư vấn & bán hàng tự động</li>
+            <li>Tích hợp vào website dễ dàng</li>
+            <li>Tăng tỷ lệ chuyển đổi & CSKH 24/7</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>Sales.ONE</h3>
+          <ul>
+            <li>Quản lý pipeline, khách hàng, đơn hàng</li>
+            <li>Theo dõi và chốt sale hiệu quả</li>
+            <li>Cho đội ngũ bán hàng nhỏ</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>Launch.ONE</h3>
+          <ul>
+            <li>Kit khởi nghiệp số tinh gọn</li>
+            <li>Có web, email, marketing cơ bản</li>
+            <li>Giúp bạn bắt đầu kinh doanh online</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2>Bảng giá Live.ONE</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Basic</h3>
+          <ul>
+            <li>1 chatbot / 1 website</li>
+            <li>1.000 lượt chat/tháng</li>
+            <li>Không học dữ liệu riêng</li>
+          </ul>
+          <div class="price">Miễn phí</div>
+        </div>
+        <div class="pricing-card highlight">
+          <h3>Pro</h3>
+          <ul>
+            <li>3 chatbot / 3 website</li>
+            <li>10.000 lượt chat/tháng</li>
+            <li>Có học dữ liệu riêng</li>
+          </ul>
+          <div class="price">199.000đ/tháng</div>
+        </div>
+        <div class="pricing-card">
+          <h3>Max</h3>
+          <ul>
+            <li>Không giới hạn chatbot</li>
+            <li>Không giới hạn lượt chat</li>
+            <li>Học dữ liệu riêng nâng cao</li>
+          </ul>
+          <div class="price">499.000đ/tháng</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partnership">
+      <h2>Tham gia cùng chúng tôi</h2>
+      <p>Trở thành một phần của mạng lưới Axacan: phát triển sản phẩm, bán hàng hoặc chia sẻ để nhận hoa hồng.</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>🤝 Đối tác</h3>
+          <ul>
+            <li>Đồng xây dựng sản phẩm mới</li>
+            <li>Chia sẻ doanh thu lâu dài</li>
+            <li>Được ưu tiên triển khai sớm</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>💼 Đại lý</h3>
+          <ul>
+            <li>Bán lại các sản phẩm .ONE</li>
+            <li>Chiết khấu hấp dẫn theo cấp</li>
+            <li>Được hỗ trợ đào tạo & tài liệu</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3>🔗 Affiliate</h3>
+          <ul>
+            <li>Chia sẻ link & nhận hoa hồng</li>
+            <li>Không cần kỹ thuật hay bán hàng</li>
+            <li>Dành cho influencer, reviewer</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="#" class="cta-button">Đăng ký hợp tác</a>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Khách hàng nói gì?</h2>
+      <p><em>“Sau khi dùng Live.ONE, tôi giảm 80% thời gian trả lời khách mà đơn hàng vẫn tăng đều.”</em><br>– Chị Linh, chủ shop mỹ phẩm</p>
+      <p><em>“Tôi tích hợp trong 5 phút là xong. Rất phù hợp với người không rành kỹ thuật như tôi.”</em><br>– Anh Tuấn, coach online</p>
+    </section>
+
+    <section class="cta">
+      <h2>Bắt đầu ngay hôm nay</h2>
+      <p>Trải nghiệm miễn phí Live.ONE và để AI bắt đầu bán hàng giúp bạn.</p>
+      <a href="#" class="cta-button">Dùng thử miễn phí</a>
+    </section>
+
+    <section class="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq-item">
+        <h4>Live.ONE có tích hợp được vào mọi website không?</h4>
+        <p>Có, chỉ cần bạn có thể chèn đoạn mã HTML, chatbot sẽ hoạt động ngay.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Chatbot có hiểu tiếng Việt không?</h4>
+        <p>Hoàn toàn. Chatbot dùng AI hiện đại để hiểu và phản hồi tiếng Việt tự nhiên.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Dữ liệu của tôi có được bảo mật?</h4>
+        <p>Có. Chúng tôi cam kết không lưu trữ hoặc chia sẻ dữ liệu khách hàng.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Có thể huấn luyện chatbot theo ngành của tôi không?</h4>
+        <p>Có. Gói Pro và Max hỗ trợ học dữ liệu riêng theo nội dung bạn cung cấp.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      © 2025 Axacan | Phát triển bởi Oxygen<br>
+      Email: support@axacan.com | Fanpage: fb.com/axacan.vn
+    </div>
+  </footer>
+</body>
+</html>
