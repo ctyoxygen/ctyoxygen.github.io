@@ -134,6 +134,65 @@
       color: #6c757d;
     }
   </style>
+
+<!-- CSS ngăn quét và chọn văn bản -->
+<style>
+  body {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+  }
+</style>
+
+<script>
+  // Chặn chuột phải
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // Chặn chọn văn bản bằng chuột
+  document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+  });
+
+  // Chặn kéo chuột để quét chọn
+  document.addEventListener('mousedown', function(e) {
+    if (e.detail > 1) {
+      e.preventDefault();
+    }
+  });
+
+  // Chặn phím tắt xem source, copy, paste, devtools...
+  document.addEventListener('keydown', function(e) {
+    const key = e.key.toLowerCase();
+
+    if (
+      // F12
+      e.key === 'F12' ||
+      // Ctrl+Shift+I/J/C
+      (e.ctrlKey && e.shiftKey && ['i', 'j', 'c'].includes(key)) ||
+      // Ctrl+U/S/A/C/X
+      (e.ctrlKey && ['u', 's', 'a', 'c', 'x'].includes(key))
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  // Chặn hành vi copy, cut, paste
+  ['copy', 'cut', 'paste', 'dragstart'].forEach(evt => {
+    document.addEventListener(evt, function(e) {
+      e.preventDefault();
+    });
+  });
+
+  // Optional: chặn luôn inspect bằng chuột (double click vào phần tử)
+  document.addEventListener('dblclick', function(e) {
+    e.preventDefault();
+  });
+</script>
+
+  
 </head>
 <body>
   <header>
